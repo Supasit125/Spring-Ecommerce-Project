@@ -1,0 +1,1361 @@
+2024-04-10 19:22:58.776713+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORY CATEGORY [*]CATEGORY"; SQL statement:
+SELECT * FROM CATEGORY CATEGORY CATEGORY [42000-224]
+2024-04-10 19:23:10.169598+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORY CATEGORY [*]CATEGORY"; SQL statement:
+SELECT * FROM CATEGORY CATEGORY CATEGORY [42000-224]
+2024-04-24 14:34:55.125108+07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORY CATEGORY [*]CATEGORY_ID"; SQL statement:
+SELECT * FROM CATEGORY CATEGORY CATEGORY_ID [42000-224]
+2024-04-24 14:34:57.626867+07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORY CATEGORY [*]CATEGORY_ID"; SQL statement:
+SELECT * FROM CATEGORY CATEGORY CATEGORY_ID [42000-224]
+2024-04-24 14:34:58.334628+07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORY CATEGORY [*]CATEGORY_ID"; SQL statement:
+SELECT * FROM CATEGORY CATEGORY CATEGORY_ID [42000-224]
+2024-04-24 14:35:00.729311+07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORY CATEGORY [*]CATEGCATEGORY ORY_ID"; SQL statement:
+SELECT * FROM CATEGORY CATEGORY CATEGCATEGORY ORY_ID [42000-224]
+2024-04-24 14:35:06.402243+07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CATEGORY CATEGORY [*]CATEGCATEGORY ORY_ID"; SQL statement:
+SELECT * FROM CATEGORY CATEGORY CATEGCATEGORY ORY_ID [42000-224]
+2024-04-24 14:40:07.985251+07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM CATEGORY WHERE ID = 1"; expected "identifier"; SQL statement:
+DELETE * FROM CATEGORY WHERE ID = 1 [42001-224]
+2024-04-24 14:40:17.238183+07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM CATEGORY"; expected "identifier"; SQL statement:
+DELETE * FROM CATEGORY [42001-224]
+2024-04-24 14:40:18.094766+07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM CATEGORY"; expected "identifier"; SQL statement:
+DELETE * FROM CATEGORY [42001-224]
+2024-04-24 14:40:18.271656+07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM CATEGORY"; expected "identifier"; SQL statement:
+DELETE * FROM CATEGORY [42001-224]
+2024-04-24 14:40:18.669416+07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM CATEGORY"; expected "identifier"; SQL statement:
+DELETE * FROM CATEGORY [42001-224]
+2024-04-24 14:40:18.872285+07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM CATEGORY"; expected "identifier"; SQL statement:
+DELETE * FROM CATEGORY [42001-224]
+2024-04-24 14:40:19.275035+07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM CATEGORY"; expected "identifier"; SQL statement:
+DELETE * FROM CATEGORY [42001-224]
+2024-04-24 14:43:21.959868+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" not found; SQL statement:
+SELECT FROM CATEGORY WHERE ID = 1 [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:147)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp.query(WebApp.java:1119)
+	at org.h2.server.web.WebApp.process(WebApp.java:245)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:177)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-04-24 14:43:45.063288+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SN" not found; SQL statement:
+SELECT FROM CATEGORY WHERE SN = 1 [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:147)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp.query(WebApp.java:1119)
+	at org.h2.server.web.WebApp.process(WebApp.java:245)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:177)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-04-24 14:46:05.662626+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT*[*]CATEGORY"; SQL statement:
+SELECT*CATEGORY [42000-224]
+2024-04-24 14:51:11.209737+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT*[*]FROMCATEGORY"; SQL statement:
+SELECT*FROMCATEGORY [42000-224]
+2024-04-24 14:51:51.364318+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "cake" not found; SQL statement:
+DELETE FROM CATEGORY WHERE NAME = "cake" [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:148)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.dml.Delete.doPrepare(Delete.java:112)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp.query(WebApp.java:1119)
+	at org.h2.server.web.WebApp.process(WebApp.java:245)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:177)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-04-24 14:52:27.678882+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "CAKE" not found; SQL statement:
+SELECT FROM CATEGORY WHERE NAME = cake [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:148)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp.query(WebApp.java:1119)
+	at org.h2.server.web.WebApp.process(WebApp.java:245)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:177)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-04-25 01:12:40.078830+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 01:12:40.160779+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 01:12:40.162780+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 01:12:40.310686+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 01:15:38.252920+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 01:15:38.311885+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 01:15:38.313883+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 01:15:38.474783+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 01:23:02.778943+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 01:23:02.817919+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 01:23:02.820916+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 01:23:02.861891+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 01:24:24.998391+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 01:24:25.036366+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 01:24:25.038369+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 01:24:25.174282+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 02:01:02.233247+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 02:01:02.299539+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 02:01:02.302056+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 02:01:02.418543+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 02:26:20.226772+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 02:26:20.256753+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 02:26:20.258748+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 02:26:20.285731+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 02:38:20.735252+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 02:38:20.763229+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 02:38:20.766228+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 02:38:20.795210+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 02:40:11.018448+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 02:40:11.044433+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 02:40:11.046428+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 02:40:11.072410+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 02:51:00.475776+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 02:51:00.502753+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 02:51:00.504758+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 02:51:00.529741+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 02:55:20.487142+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 02:55:20.514125+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 02:55:20.516119+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 02:55:20.540105+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 02:59:46.537002+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 02:59:46.576978+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 02:59:46.578977+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 02:59:46.619951+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:00:46.672152+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:00:46.721124+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:00:46.724122+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:00:46.763094+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:05:15.095483+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:05:15.120466+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:05:15.121466+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:05:15.145450+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:09:10.255302+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:09:10.281285+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:09:10.282284+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:09:10.307265+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:15:04.698094+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:15:04.769047+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:15:04.771047+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:15:04.865989+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:16:41.693794+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:16:41.722771+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:16:41.724770+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:16:41.758749+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:22:21.354936+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:22:21.382925+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:22:21.384920+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:22:21.409903+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:24:47.006294+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:24:47.046270+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:24:47.051268+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:24:47.088246+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:29:23.986910+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:29:24.015886+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:29:24.017886+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:29:24.045867+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:34:04.040208+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:34:04.069189+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:34:04.071189+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:34:04.096170+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:38:56.667559+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:38:56.702539+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:38:56.703535+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:38:56.731517+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 03:39:35.854571+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password from [*]user u1_0 where u1_0.email=?"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password from user u1_0 where u1_0.email=? [42001-224]
+2024-04-25 03:41:44.411438+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 03:41:44.444422+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 03:41:44.446418+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 03:41:44.474400+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 04:19:22.407174+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 04:19:22.454150+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 04:19:22.456145+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 04:19:22.487126+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 09:36:39.594000+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 09:36:39.636973+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 09:36:39.640971+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 09:36:39.679946+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 09:51:26.071196+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 09:51:26.103177+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 09:51:26.105176+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 09:51:26.134159+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:25:09.142561+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:25:09.154497+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:25:09.156487+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:25:09.168457+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:28:02.844222+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:28:02.856188+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:28:02.857186+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:28:02.867163+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:32:01.046461+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:32:01.057393+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:32:01.058392+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:32:01.069370+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:34:35.490680+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:34:35.500653+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:34:35.501651+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:34:35.515620+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:38:03.778476+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:38:03.791407+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:38:03.791407+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:38:03.802397+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:39:58.851852+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:39:58.863781+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:39:58.863781+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:39:58.873754+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:42:39.146008+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:42:39.158976+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:42:39.158976+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:42:39.171939+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:44:18.743002+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:44:18.751978+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:44:18.752975+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:44:18.764944+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:44:50.291692+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:44:50.302665+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:44:50.302665+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:44:50.314596+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:52:03.230788+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:52:03.241759+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:52:03.241759+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:52:03.252761+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:52:58.057678+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:52:58.067618+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:52:58.068614+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:52:58.081578+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 10:54:31.191474+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 10:54:31.200415+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 10:54:31.201412+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 10:54:31.210426+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 11:01:48.921990+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 11:01:48.930968+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 11:01:48.931964+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 11:01:48.943931+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 11:02:28.201948+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 11:02:28.213882+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 11:02:28.214879+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 11:02:28.227848+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 11:02:49.524853+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 11:02:49.535818+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 11:02:49.536818+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 11:02:49.547788+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 11:03:29.077925+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 11:03:29.087894+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 11:03:29.088886+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 11:03:29.098865+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 11:22:02.113253+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 11:22:02.126216+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 11:22:02.126216+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 11:22:02.136191+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 11:22:23.384066+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 11:22:23.394033+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 11:22:23.394994+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 11:22:23.406961+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 11:35:35.292998+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 11:35:35.303009+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 11:35:35.303009+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 11:35:35.314943+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 15:11:47.628089+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-25 15:11:47.646052+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-25 15:11:47.648054+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-25 15:11:47.667052+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-25 15:20:16.458197+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'- Quarternium Soft\\0e0a\\0e48\\0e27\\0e22\\0e43\\0e2b\\0e49\\0e1c\\0e49\\0e32\\0e19\\0e3... (316)"; SQL statement:
+insert into product (category_id,description,image_name,name,price,weight,id) values (?,?,?,?,?,?,?) [22001-224]
+2024-04-25 15:20:42.583605+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION CHARACTER VARYING(255)": "U&'- Quarternium Soft\\0e0a\\0e48\\0e27\\0e22\\0e43\\0e2b\\0e49\\0e1c\\0e49\\0e32\\0e19\\0e3... (316)"; SQL statement:
+insert into product (category_id,description,image_name,name,price,weight,id) values (?,?,?,?,?,?,?) [22001-224]
+2024-04-26 09:10:31.448468+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 09:10:31.459996+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 09:10:31.459996+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 09:10:31.477516+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 09:32:02.121633+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 09:32:02.130458+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 09:32:02.131492+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 09:32:02.139667+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 09:34:37.437065+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 09:34:37.447063+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 09:34:37.447063+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 09:34:37.458159+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 09:45:42.002906+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 09:45:42.010885+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 09:45:42.011883+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 09:45:42.019907+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 09:48:37.480526+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 09:48:37.490500+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 09:48:37.490500+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 09:48:37.499088+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 09:52:20.445423+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 09:52:20.453168+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 09:52:20.453168+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 09:52:20.463197+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 09:56:39.915994+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 09:56:39.924032+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 09:56:39.925030+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 09:56:39.933015+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:13:36.885525+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:13:36.893516+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:13:36.893516+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:13:36.901490+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:22:24.686485+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:22:24.693443+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:22:24.693443+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:22:24.703400+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:32:50.099959+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:32:50.111780+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:32:50.111780+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:32:50.120762+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:35:30.101938+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:35:30.111920+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:35:30.112917+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:35:30.123891+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:43:01.337401+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:43:01.351288+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:43:01.351288+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:43:01.366266+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:44:47.766051+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:44:47.780352+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:44:47.781313+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:44:47.794517+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:53:08.145204+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:53:08.157326+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:53:08.157326+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:53:08.170054+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 10:57:02.956994+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 10:57:02.967503+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 10:57:02.968532+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 10:57:02.976520+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:08:04.345469+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:08:04.356441+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:08:04.357659+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:08:04.367410+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:09:12.371998+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:09:12.384960+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:09:12.385957+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:09:12.401915+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:10:14.875931+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:10:14.887690+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:10:14.887690+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:10:14.898026+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:12:15.120908+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:12:15.129920+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:12:15.129920+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:12:15.138508+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:12:44.244146+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:12:44.258645+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:12:44.258645+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:12:44.269187+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:13:21.284978+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:13:21.294953+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:13:21.295915+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:13:21.305488+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:13:44.694747+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:13:44.703370+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:13:44.703370+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:13:44.712971+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:14:09.999387+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:14:10.007408+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:14:10.008404+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:14:10.015387+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:16:15.159206+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:16:15.167721+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:16:15.168698+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:16:15.177738+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:18:05.930090+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:18:05.939108+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:18:05.939108+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:18:05.949049+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:18:56.960048+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:18:56.968053+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:18:56.969021+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:18:56.976043+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:19:34.663192+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:19:34.673060+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:19:34.673060+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:19:34.682035+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:21:17.237872+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:21:17.250042+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:21:17.250042+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:21:17.258529+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:23:11.669631+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:23:11.678611+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:23:11.678611+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:23:11.687707+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:24:40.784118+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:24:40.792129+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:24:40.793129+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:24:40.801857+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:25:36.848044+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:25:36.858019+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:25:36.858019+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:25:36.869033+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:26:45.154203+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:26:45.163454+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:26:45.163454+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:26:45.172829+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:27:38.453042+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:27:38.461027+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:27:38.461027+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:27:38.470999+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:33:49.640002+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:33:49.649952+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:33:49.649952+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:33:49.657930+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 11:35:06.703140+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 11:35:06.712194+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 11:35:06.712194+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 11:35:06.722160+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 21:23:40.919262+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 21:23:41.003211+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 21:23:41.012204+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 21:23:41.119140+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 21:33:16.603020+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 21:33:16.645642+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 21:33:16.651639+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 21:33:16.771564+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 21:39:33.700913+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 21:39:33.742886+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 21:39:33.744887+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 21:39:33.912841+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 21:58:59.615876+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 21:58:59.661848+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 21:58:59.664847+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 21:58:59.703823+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 22:06:05.356656+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 22:06:05.388652+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 22:06:05.391653+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 22:06:05.427636+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 22:23:19.858635+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 22:23:19.904566+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 22:23:19.914559+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 22:23:19.967984+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 22:34:04.031429+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 22:34:04.074403+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 22:34:04.076401+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 22:34:04.214834+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
+2024-04-26 22:43:18.153622+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, email varchar(255) not null, first_name varchar(255) not null, last_name varchar(255), password varchar(255), primary key (id)) [42001-224]
+2024-04-26 22:43:18.196596+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe"; expected "identifier"; SQL statement:
+alter table if exists user drop constraint if exists UK_ob8kqyqqgmefl0aco34akdtpe [42001-224]
+2024-04-26 22:43:18.201593+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists [*]user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)"; expected "identifier"; SQL statement:
+alter table if exists user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email) [42001-224]
+2024-04-26 22:43:18.242568+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user [42001-224]
